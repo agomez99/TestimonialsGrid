@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+* {
+  box-sizing: border-box;
+}
+:root {
+  --violet: hsl(263, 55%, 52%);
+  --grayblue: hsl(217, 19%, 35%);
+  --blackblue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+}
+body {
+  margin: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: hsl(210, 46%, 95%);
+  font-size: 13px;
+}
+
+main {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  gap: 15px;
+  grid-auto-rows: minmax(250px, 20px);
+  padding: 25px;
+  width: 50rem;
+}
+.violet-card {
+  grid-column: 1/ 3;
+  grid-row: 1;
+  background-color: var(--violet);
+  color: var(--white);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.gray-card {
+  grid-column: 3/ 3;
+  grid-row: 1;
+  background-color: var(--grayblue);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 15px;
+}
+.top-white-card {
+  grid-column: 4/5;
+  grid-row: 1/3;
+  background-color: var(--white);
+  color: black;
+  border-radius: 10px;
+  padding: 15px;
+}
+.bottom-white-card {
+  grid-column: 1/ 1;
+  grid-row: 2;
+  background-color: var(--white);
+  color: black;
+  border-radius: 10px;
+  padding: 15px;
+}
+.black-card {
+  grid-column: 2/ 4;
+  grid-row: 2;
+  background-color: var(--blackblue);
+  color: var(--white);
+  border-radius: 15px;
+  padding: 15px;
+}
